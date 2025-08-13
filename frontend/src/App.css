@@ -9,7 +9,6 @@
   padding: 15px;
   text-align: center;
   color: white;
-  font-size: 1.5rem;
 }
 
 .main-content {
@@ -20,34 +19,43 @@
   text-align: center;
 }
 
-/* Combined Add & Search Row */
-.input-search-row {
+/* Search box */
+.search-box {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Form */
+.item-form {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.input-search-row input {
+.item-form input {
   flex: 1;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.input-search-row button {
+.item-form button {
   padding: 8px 12px;
   border: none;
-  border-radius: 5px;
   background-color: #4caf50;
   color: white;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.input-search-row button:hover {
-  background-color: #45a049;
+.item-form .cancel-btn {
+  background-color: #f44336;
 }
 
-/* Item List */
+/* List */
 .item-list {
   list-style: none;
   padding: 0;
@@ -63,27 +71,18 @@
   align-items: center;
 }
 
-.actions button {
-  margin-left: 5px;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
+.icon {
+  font-size: 18px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
-button.edit {
-  background-color: #ff9800;
-  color: white;
+.edit-icon {
+  color: #ff9800;
 }
 
-button.delete {
-  background-color: #f44336;
-  color: white;
-}
-
-.no-data {
-  color: gray;
-  font-style: italic;
+.delete-icon {
+  color: #f44336;
 }
 
 .footer {
@@ -91,5 +90,4 @@ button.delete {
   padding: 10px;
   text-align: center;
   color: white;
-  font-size: 0.9rem;
 }
